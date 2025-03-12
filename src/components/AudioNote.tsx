@@ -277,7 +277,7 @@ const dynamicStyles = (isDarkMode: boolean) => StyleSheet.create({
     marginBottom: 20,
     color: isDarkMode ? '#FFFFFF' : '#333',
     textAlign: 'center',
-    marginTop: 20,
+    marginTop: 10,
   },
   subtitle: {
     fontSize: 18,
@@ -291,7 +291,7 @@ const dynamicStyles = (isDarkMode: boolean) => StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 10,
     padding: 10,
-    backgroundColor: isDarkMode ? '#1E1E1E' : '#FFFFFF',
+    backgroundColor: isDarkMode ? '#97bca2' : '#d3fade',
     borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },

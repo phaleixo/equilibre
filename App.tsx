@@ -7,6 +7,7 @@ import DiarioScreen from './src/screens/DiarioScreen';
 import AudioNoteScreen from './src/screens/AudioNoteScreen';
 import TarefasScreen from './src/screens/TaskList';
 import InfoScreen from './src/screens/InfoScreen';
+import TimelineScreen from './src/screens/TimelineScreen';
 import { styles } from './src/styles/App';
 import { useNavigation } from '@react-navigation/native';
 
@@ -27,7 +28,7 @@ const CustomHeader = () => {
     >
      
     {/* Título no topo */}
-      <Text style={styles.headerTitle}>Equilibre</Text>
+      <Text style={styles.headerTitle}>EquiLibre</Text>
     </View>
   );
 };
@@ -49,6 +50,8 @@ export default function App() {
               iconName = 'mic-outline';
             } else if (route.name === 'Tarefas') {
               iconName = 'checkmark-outline';
+            } else if (route.name === 'Histórico') {
+              iconName = 'albums-outline';
             } else if (route.name === 'Sobre') {
               iconName = 'information-circle-outline';
             }
@@ -84,6 +87,13 @@ export default function App() {
         <Tab.Screen
           name="Diário"
           component={DiarioScreen}
+          options={{
+            header: () => <CustomHeader />,
+          }}
+        />
+        <Tab.Screen
+          name="Histórico"
+          component={TimelineScreen}
           options={{
             header: () => <CustomHeader />,
           }}

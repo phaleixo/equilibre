@@ -95,7 +95,7 @@ const DiarioEmocoes: React.FC = () => {
                   <Text style={styles.entryDate}>{item.date} às {item.time}</Text>
                   {item.note && <Text style={styles.entryNote}>{item.note}</Text>}
                   <TouchableOpacity onPress={() => confirmDelete(item.id)} style={styles.deleteButton}>
-                    <Icon name="trash" size={20} color={isDarkMode ? '#FFFFFF' : 'gray'} />
+                    <Icon name="trash" size={20} color={isDarkMode ? '#FFFFFF' : '#333333'} />
                   </TouchableOpacity>
                 </View>
               )}
@@ -209,7 +209,7 @@ bodyContainer: {
     padding: 20,
     marginVertical: 10,
     borderRadius: 10,
-    backgroundColor: isDarkMode ? '#1E1E1E' : '#FFFFFF',
+    backgroundColor: isDarkMode ? '#1E1E1E' : '#ffd9d3',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.5,
@@ -235,7 +235,7 @@ bodyContainer: {
   },
   fab: {
     position: 'absolute',
-    margin: 18,
+    margin: 24,
     right: 0,
     bottom: 0,
     backgroundColor: '#72b288',

@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   headerContainer: {
-    height: 60,
-    justifyContent: 'center',
+    height: 50,
+    paddingLeft: 30,
     alignItems: 'center',
     overflow: 'hidden',
     position: 'relative',
@@ -19,8 +19,8 @@ export const styles = StyleSheet.create({
   },
   headerTitle: {
     color: 'white',
-    fontSize: 32,
-    fontFamily: 'roboto',
+    fontSize: 28,
+    
     fontWeight: 'bold',
     zIndex: 1,
     textShadowColor: 'black',

@@ -116,7 +116,7 @@ const TaskList: React.FC = () => {
                   )}
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => confirmDelete(item.id)} style={styles.deleteButton}>
-                  <Icon name="trash" size={20} color={isDarkMode ? '#FFFFFF' : 'gray'} />
+                  <Icon name="trash" size={20} color={isDarkMode ? '#FFFFFF' : '#333333'} />
                 </TouchableOpacity>
               </View>
             </Animated.View>
@@ -216,7 +216,7 @@ bodyContainer: {
     justifyContent: 'space-between',
     marginBottom: 10,
     padding: 10,
-    backgroundColor: isDarkMode ? '#1E1E1E' : '#FFFFFF',
+    backgroundColor: isDarkMode ? '#bcb984' : '#fdf9c1',
     borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -229,10 +229,10 @@ bodyContainer: {
     flex: 1,
     padding: 10,
     borderRadius: 10,
-    backgroundColor: isDarkMode ? '#1E1E1E' : '#FFFFFF',
+    backgroundColor: isDarkMode ? '#bcb984' : '#fdf9c1',
   },
   completedTask: {
-    backgroundColor: isDarkMode ? '#1E1E1E' : '#FFFFFF',
+    backgroundColor: isDarkMode ? '#bcb984' : '#fdf9c1',
   },
   taskText: {
     fontSize: 18,
