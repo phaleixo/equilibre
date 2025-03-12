@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Equilibre",
+    "slug": "equilibre",
+    "version": "1.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icons/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "text": "Equilibre",
+      "image": "./src/assets/icons/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#005187"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icons/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.phaleixo.equilibre"
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9997436d-b0c1-4e43-ab3a-f6cec81fd57c"
+      }
+    }
+  }
+}
