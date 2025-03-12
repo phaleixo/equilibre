@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, useColorScheme, View, Text, Image } from 'react-native';
+import { StatusBar, useColorScheme, View, Text,TouchableOpacity } from 'react-native';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -7,28 +7,26 @@ import DiarioScreen from './src/screens/DiarioScreen';
 import AudioNoteScreen from './src/screens/AudioNoteScreen';
 import TarefasScreen from './src/screens/TaskList';
 import InfoScreen from './src/screens/InfoScreen';
-import { styles } from './src/constants/styles';
+import { styles } from './src/styles/App';
+import { useNavigation } from '@react-navigation/native';
 
 const Tab = createBottomTabNavigator();
 
 // Componente personalizado para o header
 const CustomHeader = () => {
   const theme = useColorScheme(); // Detecta o tema atual
+  const navigation = useNavigation(); // Navegação
 
   return (
     <View
       style={[
         styles.headerContainer,
         { backgroundColor: theme === 'dark' ? '#222' : '#005187' }, // Altera a cor do header dinamicamente
+        { flexDirection: 'row', alignItems: 'center' }
       ]}
     >
-      {/* Imagem no fundo */}
-      <Image
-        source={require('./src/assets/images/faixa.png')} // Caminho da imagem
-        style={styles.backgroundImage}
-      />
-
-      {/* Título no topo */}
+     
+    {/* Título no topo */}
       <Text style={styles.headerTitle}>Equilibre</Text>
     </View>
   );
@@ -61,7 +59,7 @@ export default function App() {
             height: 70,
             paddingBottom: 10,
             paddingTop: 5,
-            backgroundColor: theme === 'dark' ? '#' : '#005187', // Muda a cor da tab
+            backgroundColor: theme === 'dark' ? '#222' : '#005187', // Muda a cor da tab
             borderTopWidth: 0.1,
           },
           tabBarActiveTintColor: theme === 'dark' ? '#80D8FF' : '#80D8FF',

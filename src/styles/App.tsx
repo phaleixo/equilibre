@@ -2,11 +2,12 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   headerContainer: {
-    height: 80,
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
     position: 'relative',
+    
   },
   backgroundImage: {
     position: 'absolute',
@@ -19,12 +20,12 @@ export const styles = StyleSheet.create({
   headerTitle: {
     color: 'white',
     fontSize: 32,
-    fontFamily: 'Roboto',
+    fontFamily: 'roboto',
     fontWeight: 'bold',
     zIndex: 1,
     textShadowColor: 'black',
     textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 3,
+    textShadowRadius: 2,
   },
-  
+ 
 });

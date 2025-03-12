@@ -176,12 +176,12 @@ const DiarioEmocoes: React.FC = () => {
 const dynamicStyles = (isDarkMode: boolean) => StyleSheet.create({
   container: {
     flex: 1,
-    padding: 4,
+    padding: 6,
     
   },
 bodyContainer: {
   flex: 1,
-  backgroundColor: isDarkMode ? '#222' : '#F5F5F5',
+  backgroundColor: isDarkMode ? '#2b2b2b' : '#F5F5F5',
   borderRadius: 15, // Adicionando cantos arredondados
   padding: 3, // Espaçamento interno
   shadowColor: '#000',
