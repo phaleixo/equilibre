@@ -37,7 +37,7 @@ O **Equilibre** é um aplicativo desenvolvido  para ajudar pessoas  a organizare
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/equilibre.git
+    git clone https://github.com/phaleixo/equilibre.git
     cd equilibre
     ```
 
